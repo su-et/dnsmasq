@@ -1,15 +1,25 @@
 # Generic dnsmasq on Alpine image
 
+![Docker Cloud Automated build](https://img.shields.io/docker/cloud/automated/suet/dnsmasq)
+![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/suet/dnsmasq)
+
 Sometimes we need to quickly override DNS entries for testing purposes. [dnsmasq](http://www.thekelleys.org.uk/dnsmasq/doc.html) provides an easy way to override a few DNS records, while still (recursively) resolving any other records.
 
 This container is just [Alpine Linux](https://alpinelinux.org) with `dnsmasq` installed.
 
+## Using the Pre-built Image
+
+```
+% docker pull suet/dnsmasq
+```
+
 ## Building the Image
 
 ```
-docker build -t dnsmasq:alpine .
+% git clone https://github.com/su-et/dnsmasq.git
+% cd dnsmasq
+% docker build -t dnsmasq .
 ```
-
 
 ## Running
 
